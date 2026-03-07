@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callum Carver — Manchester, 22, Building Things</title>
+    <meta name="description" content="Callum Carver. 22. Manchester. Entrepreneur, coach, and founder of The Kaizen. This is the personal side — beyond the business.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Callum Carver — The Personal Side">
+    <meta property="og:description" content="22 years old. Manchester. Building The Kaizen. Here's who I am beyond the business.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://callumcarver.co.uk">
+    <meta property="og:image" content="https://callumcarver.co.uk/img/callum-og.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ItsCallumCarver">
+    <meta name="twitter:title" content="Callum Carver — The Personal Side">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    <!-- Person Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Callum Carver",
+        "url": "https://callumcarver.co.uk",
+        "sameAs": [
+            "https://callumcarver.com",
+            "https://www.instagram.com/callumcarver",
+            "https://www.tiktok.com/@callumcarver",
+            "https://x.com/ItsCallumCarver",
+            "https://uk.linkedin.com/in/callum-carver-3392b7217",
+            "https://www.threads.net/@callumcarver",
+            "https://thekaizen.beehiiv.com",
+            "https://thekaizen.co",
+            "https://skilltoprofit.co",
+            "https://medium.com/@callumcarver",
+            "https://www.crunchbase.com/person/callum-carver"
+        ],
+        "jobTitle": "Founder & CEO",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "The Kaizen",
+            "url": "https://thekaizen.co"
+        },
+        "description": "Callum Carver is a 22-year-old entrepreneur from Manchester, UK. Founder of The Kaizen and creator of Skill to Profit.",
+        "birthPlace": {
+            "@type": "Place",
+            "name": "Manchester, United Kingdom"
+        },
+        "nationality": {
+            "@type": "Country",
+            "name": "United Kingdom"
+        }
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: #2a2a2a;
+            line-height: 1.7;
+            background: #faf9f7;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(250,249,247,0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+        }
+
+        nav .name {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #2a2a2a;
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        nav .links {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav .links a {
+            text-decoration: none;
+            color: #888;
+            font-size: 0.85rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            transition: color 0.2s;
+        }
+
+        nav .links a:hover {
+            color: #2a2a2a;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 120px 40px 80px;
+            text-align: center;
+        }
+
+        .hero-inner {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 400;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+
+        .hero p {
+            font-size: 1.05rem;
+            color: #777;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            margin-bottom: 32px;
+        }
+
+        .hero-social {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+        }
+
+        .hero-social a {
+            color: #999;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            transition: color 0.2s;
+        }
+
+        .hero-social a:hover {
+            color: #2a2a2a;
+        }
+
+        /* Content sections */
+        .content {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 0 40px 100px;
+        }
+
+        .content-section {
+            margin-bottom: 80px;
+        }
+
+        .content-section h2 {
+            font-size: 1.6rem;
+            font-weight: 400;
+            font-style: italic;
+            margin-bottom: 20px;
+            color: #2a2a2a;
+        }
+
+        .content-section p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 16px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.8;
+        }
+
+        /* Timeline */
+        .timeline {
+            margin-top: 32px;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 28px;
+            align-items: flex-start;
+        }
+
+        .timeline-year {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #aaa;
+            min-width: 48px;
+            padding-top: 2px;
+        }
+
+        .timeline-text {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .timeline-text strong {
+            color: #2a2a2a;
+        }
+
+        /* Photo grid placeholder */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin-top: 32px;
+        }
+
+        .photo-placeholder {
+            aspect-ratio: 1;
+            background: #eee;
+            border-radius: 8px;
+        }
+
+        .photo-placeholder.wide {
+            grid-column: span 2;
+            aspect-ratio: 2/1;
+        }
+
+        /* Values */
+        .values-list {
+            margin-top: 24px;
+        }
+
+        .value-item {
+            padding: 20px 0;
+            border-bottom: 1px solid #e8e6e3;
+        }
+
+        .value-item:first-child {
+            border-top: 1px solid #e8e6e3;
+        }
+
+        .value-item h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            margin-bottom: 6px;
+            color: #2a2a2a;
+        }
+
+        .value-item p {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 0;
+        }
+
+        /* Footer */
+        footer {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 40px 40px 60px;
+            border-top: 1px solid #e8e6e3;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.8rem;
+            color: #bbb;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        footer a {
+            color: #999;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #2a2a2a;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            nav {
+                padding: 16px 20px;
+            }
+
+            .hero {
+                padding: 100px 20px 60px;
+            }
+
+            .content {
+                padding: 0 20px 60px;
+            }
+
+            .photo-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .photo-placeholder.wide {
+                grid-column: span 2;
+            }
+
+            footer {
+                padding: 32px 20px 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="name">Callum Carver</a>
+        <div class="links">
+            <a href="#story">Story</a>
+            <a href="#life">Life</a>
+            <a href="#values">Values</a>
+            <a href="https://callumcarver.com">Professional Site</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-inner">
+            <h1>22, Manchester, building things I care about.</h1>
+            <p>I'm Callum Carver. I run a company called The Kaizen. But this page isn't about the business — it's about everything else.</p>
+            <div class="hero-social">
+                <a href="https://www.instagram.com/callumcarver" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://www.tiktok.com/@callumcarver" target="_blank" rel="noopener">TikTok</a>
+                <a href="https://x.com/ItsCallumCarver" target="_blank" rel="noopener">X</a>
+                <a href="https://uk.linkedin.com/in/callum-carver-3392b7217" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <div class="content">
+
+        <!-- Story -->
+        <div class="content-section" id="story">
+            <h2>The short version</h2>
+            <p>I grew up in Manchester. Started my first online business at 17 because I didn't want to follow the traditional path — university, corporate job, wait until 65 to enjoy life. I wanted to build something on my own terms.</p>
+            <p>It took a while to figure out. The first few months were rough — no clients, no money, no idea what I was doing. But I kept going. By 18 I was making a full-time income. By 20, I was earning over $20K a month. Now I run The Kaizen, where I help other people do the same thing.</p>
+            <p>I'm not special. I just started early and didn't stop.</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2021</div>
+                    <div class="timeline-text"><strong>Started first online business at 17.</strong> No money, no network, no clue. Just a laptop and too much free time.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2022</div>
+                    <div class="timeline-text"><strong>Hit $20K/month.</strong> Quit everything else. Started teaching others what I'd learned. The Kaizen was born.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-text"><strong>Launched Skill to Profit.</strong> Our flagship programme. First 100 students enrolled. Built the team.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-text"><strong>Scaled to $70-100K/month.</strong> 400+ active students. Featured in Voice of London, Talk Twenties, YEARBOOK, and more.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2025</div>
+                    <div class="timeline-text"><strong>Grew Instagram to 362K followers.</strong> Kept building. Kept improving. Kaizen — continuous improvement.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2026</div>
+                    <div class="timeline-text"><strong>Still going.</strong> New goals, bigger vision, same work ethic.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Life -->
+        <div class="content-section" id="life">
+            <h2>Beyond the business</h2>
+            <p>I'm not one of those people who only talks about business. I care about a lot of things outside of work — fitness, travel, spending time with people I care about, reading, learning new skills for the sake of it.</p>
+            <p>Manchester is home. It's where I grew up, where the business started, and where I still live. There's something about this city — the grit, the energy, the people — that keeps me grounded.</p>
+            <p>I believe in living well while you're young. Not just grinding until you burn out, but actually enjoying the process. That's what The Kaizen philosophy is about — getting better every day, in business and in life.</p>
+
+            <!-- Photo grid - replace placeholders with real images -->
+            <div class="photo-grid">
+                <div class="photo-placeholder"></div>
+                <div class="photo-placeholder"></div>
+                <div class="photo-placeholder"></div>
+                <div class="photo-placeholder wide"></div>
+                <div class="photo-placeholder"></div>
+            </div>
+            <p style="font-size: 0.8rem; color: #bbb; margin-top: 12px; text-align: center;">Add your photos here — travel, fitness, Manchester, friends, daily life</p>
+        </div>
+
+        <!-- Values -->
+        <div class="content-section" id="values">
+            <h2>What matters to me</h2>
+
+            <div class="values-list">
+                <div class="value-item">
+                    <h3>Honesty over hype</h3>
+                    <p>I'd rather tell someone the truth about what it takes than sell them a dream. Building a business is hard. Rewarding, but hard.</p>
+                </div>
+                <div class="value-item">
+                    <h3>Action over theory</h3>
+                    <p>I've never been academic. I learn by doing. Everything I teach comes from real experience, not textbooks.</p>
+                </div>
+                <div class="value-item">
+                    <h3>People over profit</h3>
+                    <p>The students who go through Skill to Profit aren't numbers. They're real people trying to change their lives. That responsibility matters to me.</p>
+                </div>
+                <div class="value-item">
+                    <h3>Long-term thinking</h3>
+                    <p>I'm not building a quick cash grab. The Kaizen is meant to last. Every decision I make is about where we'll be in 5 years, not 5 months.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Callum Carver &bull; Manchester, UK &bull; <a href="https://callumcarver.com">callumcarver.com</a> &bull; <a href="https://thekaizen.co">The Kaizen</a></p>
+        <p style="margin-top: 8px;">&copy; 2026</p>
+    </footer>
+
+</body>
+</html>
