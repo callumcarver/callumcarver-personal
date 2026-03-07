@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Callum Carver — Manchester, 22, Building Things</title>
-    <meta name="description" content="Callum Carver. 22. Manchester. Entrepreneur, coach, and founder of The Kaizen. This is the personal side — beyond the business.">
+    <title>Callum Carver - Manchester, 22, Building Things</title>
+    <meta name="description" content="Callum Carver. 22. Manchester. Entrepreneur, coach, and founder of The Kaizen. This is the personal side.">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Callum Carver — The Personal Side">
+    <meta property="og:title" content="Callum Carver - The Personal Side">
     <meta property="og:description" content="22 years old. Manchester. Building The Kaizen. Here's who I am beyond the business.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://callumcarver.co.uk">
@@ -16,7 +16,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@ItsCallumCarver">
-    <meta name="twitter:title" content="Callum Carver — The Personal Side">
+    <meta name="twitter:title" content="Callum Carver - The Personal Side">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/img/favicon.png">
@@ -28,6 +28,7 @@
         "@type": "Person",
         "name": "Callum Carver",
         "url": "https://callumcarver.co.uk",
+        "image": "https://callumcarver.co.uk/img/callum-personal.jpg",
         "sameAs": [
             "https://callumcarver.com",
             "https://www.instagram.com/callumcarver",
@@ -219,7 +220,7 @@
             color: #2a2a2a;
         }
 
-        /* Photo grid placeholder */
+        /* Photo grid */
         .photo-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -227,15 +228,22 @@
             margin-top: 32px;
         }
 
-        .photo-placeholder {
+        .photo-slot {
             aspect-ratio: 1;
             background: #eee;
             border-radius: 8px;
+            overflow: hidden;
         }
 
-        .photo-placeholder.wide {
+        .photo-slot.wide {
             grid-column: span 2;
             aspect-ratio: 2/1;
+        }
+
+        .photo-slot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         /* Values */
@@ -308,7 +316,7 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            .photo-placeholder.wide {
+            .photo-slot.wide {
                 grid-column: span 2;
             }
 
@@ -335,7 +343,7 @@
     <section class="hero">
         <div class="hero-inner">
             <h1>22, Manchester, building things I care about.</h1>
-            <p>I'm Callum Carver. I run a company called The Kaizen. But this page isn't about the business — it's about everything else.</p>
+            <p>I'm Callum Carver. I run a company called The Kaizen. But this page isn't about the business. It's about everything else.</p>
             <div class="hero-social">
                 <a href="https://www.instagram.com/callumcarver" target="_blank" rel="noopener">Instagram</a>
                 <a href="https://www.tiktok.com/@callumcarver" target="_blank" rel="noopener">TikTok</a>
@@ -351,34 +359,34 @@
         <!-- Story -->
         <div class="content-section" id="story">
             <h2>The short version</h2>
-            <p>I grew up in Manchester. Started my first online business at 17 because I didn't want to follow the traditional path — university, corporate job, wait until 65 to enjoy life. I wanted to build something on my own terms.</p>
-            <p>It took a while to figure out. The first few months were rough — no clients, no money, no idea what I was doing. But I kept going. By 18 I was making a full-time income. By 20, I was earning over $20K a month. Now I run The Kaizen, where I help other people do the same thing.</p>
-            <p>I'm not special. I just started early and didn't stop.</p>
+            <p>I found entrepreneurship at 17 because of a TikTok video and a crumpled copy of Rich Dad, Poor Dad my dad dug out of a cupboard. Started making content about affiliate marketing, got my first $1,000 commission sitting in a photography class at sixth form, then got shut down by the SEC for being under 18.</p>
+            <p>After that it was a series of figuring things out. Brand sponsorships. Walking around in a suit handing CVs to estate agents. Social media management for my sister's restaurant. A failed marketing agency where I tried to sell Facebook ads without ever having had a Facebook account. Each one taught me something. Each one got me closer.</p>
+            <p>Eventually a mentor pointed me back to what I actually knew, and everything clicked. Now I run The Kaizen, where I help people do what I wish I'd done from the start: take a skill they already have and build a real business around it.</p>
 
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-year">2021</div>
-                    <div class="timeline-text"><strong>Started first online business at 17.</strong> No money, no network, no clue. Just a laptop and too much free time.</div>
+                    <div class="timeline-text"><strong>Found entrepreneurship at 17.</strong> Started with affiliate marketing on TikTok. First $1,000 commission in sixth form. Got shut down by the SEC.</div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-year">2022</div>
-                    <div class="timeline-text"><strong>Hit $20K/month.</strong> Quit everything else. Started teaching others what I'd learned. The Kaizen was born.</div>
+                    <div class="timeline-text"><strong>Tried everything.</strong> Brand sponsorships (Bitpanda), social media management, SMMA. Turned down a £20K/year estate agent job. Found my lane in influencer marketing (SMIP). Moved to Manchester.</div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-year">2023</div>
-                    <div class="timeline-text"><strong>Launched Skill to Profit.</strong> Our flagship programme. First 100 students enrolled. Built the team.</div>
+                    <div class="timeline-text"><strong>Launched The Kaizen as a newsletter.</strong> Grew to 60,000 subscribers. Ran Project Kaizen (100-day challenge, 100K new followers). Launched Skill to Profit as a 10-person cohort first. Full launch was a massive success.</div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-year">2024</div>
-                    <div class="timeline-text"><strong>Scaled to $70-100K/month.</strong> 400+ active students. Featured in Voice of London, Talk Twenties, YEARBOOK, and more.</div>
+                    <div class="timeline-text"><strong>Scaled to $70-100K/month.</strong> Built a team of 15+ people. Over 500 people coached. $1.3M+ in student revenue generated.</div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-year">2025</div>
-                    <div class="timeline-text"><strong>Grew Instagram to 362K followers.</strong> Kept building. Kept improving. Kaizen — continuous improvement.</div>
+                    <div class="timeline-text"><strong>Retired both my parents.</strong> Dad came on as ops manager. Mum doesn't have to work at all. That meant more to me than any revenue number.</div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-year">2026</div>
-                    <div class="timeline-text"><strong>Still going.</strong> New goals, bigger vision, same work ethic.</div>
+                    <div class="timeline-text"><strong>Still going.</strong> New goals, bigger vision, same stubbornness that started everything.</div>
                 </div>
             </div>
         </div>
@@ -386,19 +394,30 @@
         <!-- Life -->
         <div class="content-section" id="life">
             <h2>Beyond the business</h2>
-            <p>I'm not one of those people who only talks about business. I care about a lot of things outside of work — fitness, travel, spending time with people I care about, reading, learning new skills for the sake of it.</p>
-            <p>Manchester is home. It's where I grew up, where the business started, and where I still live. There's something about this city — the grit, the energy, the people — that keeps me grounded.</p>
-            <p>I believe in living well while you're young. Not just grinding until you burn out, but actually enjoying the process. That's what The Kaizen philosophy is about — getting better every day, in business and in life.</p>
+            <p>Manchester is home. I've lived here, moved to Bath, moved back. Something about this city keeps pulling me in. The grit, the energy, the people.</p>
+            <p>I bought a Ford Mustang after my first big month. Took it on a driving trip around Europe, hammered it through mountain roads at stupid speeds, came back fine. Then crashed it into a lamppost in Bristol a couple of days later. That tells you everything you need to know about me.</p>
+            <p>When I'm not working, it's fitness, reading (started with Rich Dad, Poor Dad and haven't stopped since), and spending time with the people I care about. The whole point of building something is so you can actually live well while you're young, not just grind until you burn out.</p>
 
-            <!-- Photo grid - replace placeholders with real images -->
+            <!-- PHOTOS: Add 5 real photos here -->
+            <!-- Save them as img/photo-1.jpg through img/photo-5.jpg in this folder -->
+            <!-- Suggested photos: 1) casual portrait, 2) Manchester/city, 3) with friends or team, 4) travel/Mustang (wide), 5) fitness or lifestyle -->
             <div class="photo-grid">
-                <div class="photo-placeholder"></div>
-                <div class="photo-placeholder"></div>
-                <div class="photo-placeholder"></div>
-                <div class="photo-placeholder wide"></div>
-                <div class="photo-placeholder"></div>
+                <div class="photo-slot">
+                    <img src="img/photo-1.jpg" alt="Callum Carver">
+                </div>
+                <div class="photo-slot">
+                    <img src="img/photo-2.jpg" alt="Callum Carver">
+                </div>
+                <div class="photo-slot">
+                    <img src="img/photo-3.jpg" alt="Callum Carver">
+                </div>
+                <div class="photo-slot wide">
+                    <img src="img/photo-4.jpg" alt="Callum Carver">
+                </div>
+                <div class="photo-slot">
+                    <img src="img/photo-5.jpg" alt="Callum Carver">
+                </div>
             </div>
-            <p style="font-size: 0.8rem; color: #bbb; margin-top: 12px; text-align: center;">Add your photos here — travel, fitness, Manchester, friends, daily life</p>
         </div>
 
         <!-- Values -->
@@ -408,19 +427,19 @@
             <div class="values-list">
                 <div class="value-item">
                     <h3>Honesty over hype</h3>
-                    <p>I'd rather tell someone the truth about what it takes than sell them a dream. Building a business is hard. Rewarding, but hard.</p>
+                    <p>I'd rather tell someone the truth about what it takes than sell them a dream. I tried selling things I didn't understand and got destroyed. Now I only teach what I've actually done.</p>
                 </div>
                 <div class="value-item">
                     <h3>Action over theory</h3>
-                    <p>I've never been academic. I learn by doing. Everything I teach comes from real experience, not textbooks.</p>
+                    <p>I spent months consuming books, podcasts and courses before I took any real action. The moment I actually started messaging businesses, everything changed. I teach my students the same thing: action produces results, information produces comfort.</p>
                 </div>
                 <div class="value-item">
                     <h3>People over profit</h3>
-                    <p>The students who go through Skill to Profit aren't numbers. They're real people trying to change their lives. That responsibility matters to me.</p>
+                    <p>The students who go through Skill to Profit aren't numbers. We've worked with 60-year-old retirees, interns, car salesmen, graduates. Watching them build something real is why I do this.</p>
                 </div>
                 <div class="value-item">
-                    <h3>Long-term thinking</h3>
-                    <p>I'm not building a quick cash grab. The Kaizen is meant to last. Every decision I make is about where we'll be in 5 years, not 5 months.</p>
+                    <h3>Impact compounds</h3>
+                    <p>When someone starts earning £5,000 a month and quits their job, they go on to employ people, to change other lives. The impact spreads way beyond the individual. That's the most powerful thing I've experienced.</p>
                 </div>
             </div>
         </div>
