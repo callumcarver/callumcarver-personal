@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Callum Carver - Manchester, 22, Building Things</title>
-    <meta name="description" content="Callum Carver. 22. Manchester. Entrepreneur, coach, and founder of The Kaizen. This is the personal side.">
+    <title>Callum Carver - The Story Behind The Kaizen</title>
+    <meta name="description" content="Callum Carver. 22. Entrepreneur, coach, founder of The Kaizen. The real story, from affiliate marketing at 17 to retiring both parents by 22.">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Callum Carver - The Personal Side">
-    <meta property="og:description" content="22 years old. Manchester. Building The Kaizen. Here's who I am beyond the business.">
+    <meta property="og:title" content="Callum Carver - The Story Behind The Kaizen">
+    <meta property="og:description" content="From a crumpled copy of Rich Dad, Poor Dad to building a $100K/month coaching company. The real story.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://callumcarver.co.uk">
     <meta property="og:image" content="https://callumcarver.co.uk/img/callum-og.jpg">
@@ -16,10 +16,15 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@ItsCallumCarver">
-    <meta name="twitter:title" content="Callum Carver - The Personal Side">
+    <meta name="twitter:title" content="Callum Carver - The Story Behind The Kaizen">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    <!-- Fonts: Montserrat for headings, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Person Schema Markup -->
     <script type="application/ld+json">
@@ -28,7 +33,7 @@
         "@type": "Person",
         "name": "Callum Carver",
         "url": "https://callumcarver.co.uk",
-        "image": "https://callumcarver.co.uk/img/callum-personal.jpg",
+        "image": "https://callumcarver.co.uk/img/photo-1.jpg",
         "sameAs": [
             "https://callumcarver.com",
             "https://www.instagram.com/callumcarver",
@@ -48,10 +53,10 @@
             "name": "The Kaizen",
             "url": "https://thekaizen.co"
         },
-        "description": "Callum Carver is a 22-year-old entrepreneur from Manchester, UK. Founder of The Kaizen and creator of Skill to Profit.",
+        "description": "Callum Carver is a 22-year-old entrepreneur from the UK. Founder of The Kaizen and creator of Skill to Profit. Over 500 people coached, $1.3M+ in student revenue generated.",
         "birthPlace": {
             "@type": "Place",
-            "name": "Manchester, United Kingdom"
+            "name": "United Kingdom"
         },
         "nationality": {
             "@type": "Country",
@@ -61,57 +66,73 @@
     </script>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --red: #D13737;
+            --red-deep: #A02020;
+            --red-light: #E85555;
+            --black: #111111;
+            --dark-card: #1A1A1A;
+            --dark-border: #2a2a2a;
+            --grey-dark: #333333;
+            --grey-mid: #666666;
+            --grey-light: #999999;
+            --grey-text: #b5b5b5;
+            --white: #ffffff;
+            --off-white: #F5F5F5;
         }
 
         body {
-            font-family: 'Georgia', 'Times New Roman', serif;
-            color: #2a2a2a;
-            line-height: 1.7;
-            background: #faf9f7;
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
+            color: var(--white);
+            line-height: 1.6;
+            background: var(--black);
         }
 
-        /* Navigation */
+        h1, h2, h3, h4, .nav-text, .btn, .section-label, .timeline-year {
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        }
+
+        /* Nav */
         nav {
             position: fixed;
             top: 0;
             width: 100%;
-            padding: 20px 40px;
+            padding: 18px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: rgba(250,249,247,0.95);
-            backdrop-filter: blur(10px);
+            background: rgba(17,17,17,0.92);
+            backdrop-filter: blur(20px);
             z-index: 100;
+            border-bottom: 1px solid var(--dark-border);
         }
 
-        nav .name {
+        nav .logo {
+            font-family: 'Montserrat', sans-serif;
             font-size: 1rem;
             font-weight: 700;
-            color: #2a2a2a;
+            color: var(--white);
             text-decoration: none;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            letter-spacing: -0.02em;
         }
 
-        nav .links {
-            display: flex;
-            gap: 28px;
-        }
+        nav .logo span { color: var(--red); }
+
+        nav .links { display: flex; gap: 32px; }
 
         nav .links a {
             text-decoration: none;
-            color: #888;
-            font-size: 0.85rem;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--grey-mid);
+            font-size: 0.82rem;
+            font-weight: 500;
             transition: color 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
         }
 
-        nav .links a:hover {
-            color: #2a2a2a;
-        }
+        nav .links a:hover { color: var(--white); }
 
         /* Hero */
         .hero {
@@ -119,28 +140,52 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 120px 40px 80px;
+            padding: 100px 40px 80px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -200px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 900px;
+            height: 900px;
+            background: radial-gradient(circle, rgba(209,55,55,0.1) 0%, transparent 60%);
+            pointer-events: none;
         }
 
         .hero-inner {
-            max-width: 600px;
+            max-width: 700px;
+            position: relative;
+        }
+
+        .hero-tag {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--red);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 24px;
         }
 
         .hero h1 {
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 400;
-            line-height: 1.3;
-            letter-spacing: -0.01em;
+            font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
             margin-bottom: 24px;
-            font-style: italic;
         }
 
         .hero p {
             font-size: 1.05rem;
-            color: #777;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            margin-bottom: 32px;
+            color: var(--grey-text);
+            max-width: 540px;
+            margin: 0 auto 40px;
+            line-height: 1.7;
         }
 
         .hero-social {
@@ -150,88 +195,111 @@
         }
 
         .hero-social a {
-            color: #999;
+            color: var(--grey-mid);
             text-decoration: none;
-            font-size: 0.85rem;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 500;
             transition: color 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
         }
 
-        .hero-social a:hover {
-            color: #2a2a2a;
-        }
+        .hero-social a:hover { color: var(--red); }
 
-        /* Content sections */
-        .content {
-            max-width: 640px;
+        /* Sections */
+        section {
+            padding: 120px 40px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 0 40px 100px;
         }
 
-        .content-section {
-            margin-bottom: 80px;
+        .section-label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--red);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 14px;
         }
 
-        .content-section h2 {
-            font-size: 1.6rem;
-            font-weight: 400;
-            font-style: italic;
+        section h2 {
+            font-size: clamp(1.8rem, 3vw, 2.4rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
             margin-bottom: 20px;
-            color: #2a2a2a;
+            line-height: 1.12;
         }
 
-        .content-section p {
-            font-size: 1rem;
-            color: #555;
-            margin-bottom: 16px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            line-height: 1.8;
+        .section-divider {
+            max-width: 900px;
+            margin: 0 auto;
+            height: 1px;
+            background: var(--dark-border);
+        }
+
+        /* Story text */
+        .story-text p {
+            font-size: 0.95rem;
+            color: var(--grey-text);
+            margin-bottom: 20px;
+            line-height: 1.85;
         }
 
         /* Timeline */
         .timeline {
-            margin-top: 32px;
+            margin-top: 48px;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
         }
 
         .timeline-item {
-            display: flex;
-            gap: 24px;
-            margin-bottom: 28px;
-            align-items: flex-start;
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: 28px;
+            padding: 28px 0;
+            border-bottom: 1px solid var(--dark-border);
+            align-items: start;
+        }
+
+        .timeline-item:first-child {
+            border-top: 1px solid var(--dark-border);
         }
 
         .timeline-year {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             font-size: 0.85rem;
-            font-weight: 700;
-            color: #aaa;
-            min-width: 48px;
+            font-weight: 800;
+            color: var(--red);
             padding-top: 2px;
         }
 
-        .timeline-text {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        .timeline-content h4 {
             font-size: 0.95rem;
-            color: #555;
+            font-weight: 700;
+            margin-bottom: 6px;
+            line-height: 1.3;
+        }
+
+        .timeline-content p {
+            font-size: 0.88rem;
+            color: var(--grey-mid);
             line-height: 1.6;
         }
 
-        .timeline-text strong {
-            color: #2a2a2a;
-        }
-
-        /* Photo grid */
+        /* Photo Grid */
         .photo-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 8px;
-            margin-top: 32px;
+            gap: 6px;
+            margin-top: 48px;
+            border-radius: 12px;
+            overflow: hidden;
         }
 
         .photo-slot {
             aspect-ratio: 1;
-            background: #eee;
-            border-radius: 8px;
+            background: var(--dark-card);
             overflow: hidden;
         }
 
@@ -244,85 +312,135 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 0.4s;
+        }
+
+        .photo-slot:hover img {
+            transform: scale(1.03);
+        }
+
+        /* Life text */
+        .life-text p {
+            font-size: 0.95rem;
+            color: var(--grey-text);
+            margin-bottom: 20px;
+            line-height: 1.85;
         }
 
         /* Values */
-        .values-list {
-            margin-top: 24px;
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-top: 48px;
         }
 
-        .value-item {
-            padding: 20px 0;
-            border-bottom: 1px solid #e8e6e3;
+        .value-card {
+            padding: 36px;
+            background: var(--dark-card);
+            border: 1px solid var(--dark-border);
+            border-radius: 10px;
+            transition: border-color 0.3s;
         }
 
-        .value-item:first-child {
-            border-top: 1px solid #e8e6e3;
-        }
+        .value-card:hover { border-color: var(--red); }
 
-        .value-item h3 {
+        .value-card h3 {
             font-size: 1rem;
             font-weight: 700;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            margin-bottom: 6px;
-            color: #2a2a2a;
+            margin-bottom: 10px;
         }
 
-        .value-item p {
-            font-size: 0.9rem;
-            color: #777;
-            margin-bottom: 0;
+        .value-card p {
+            font-size: 0.88rem;
+            color: var(--grey-mid);
+            line-height: 1.65;
         }
+
+        /* Connect CTA */
+        .connect {
+            text-align: center;
+            padding: 100px 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .connect h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(1.6rem, 2.5vw, 2rem);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+        }
+
+        .connect p {
+            font-size: 0.95rem;
+            color: var(--grey-text);
+            margin-bottom: 36px;
+        }
+
+        .connect-links {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .connect-links a {
+            font-family: 'Montserrat', sans-serif;
+            display: inline-flex;
+            align-items: center;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-primary { background: var(--red); color: var(--white); }
+        .btn-primary:hover { background: var(--red-deep); box-shadow: 0 4px 30px rgba(209,55,55,0.25); }
+        .btn-secondary { background: transparent; color: var(--white); border: 1px solid var(--dark-border); }
+        .btn-secondary:hover { border-color: var(--grey-mid); }
 
         /* Footer */
         footer {
-            max-width: 640px;
+            padding: 50px 40px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 40px 40px 60px;
-            border-top: 1px solid #e8e6e3;
-            text-align: center;
+            border-top: 1px solid var(--dark-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 32px;
         }
 
-        footer p {
-            font-size: 0.8rem;
-            color: #bbb;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-        }
-
-        footer a {
-            color: #999;
+        .footer-left p { font-size: 0.78rem; color: var(--grey-dark); }
+        .footer-left p span { color: var(--red); }
+        .footer-socials { display: flex; gap: 24px; }
+        .footer-socials a {
             text-decoration: none;
+            color: var(--grey-dark);
+            font-size: 0.78rem;
+            font-weight: 500;
+            transition: color 0.2s;
         }
-
-        footer a:hover {
-            color: #2a2a2a;
-        }
+        .footer-socials a:hover { color: var(--red); }
 
         /* Mobile */
         @media (max-width: 768px) {
-            nav {
-                padding: 16px 20px;
-            }
-
-            .hero {
-                padding: 100px 20px 60px;
-            }
-
-            .content {
-                padding: 0 20px 60px;
-            }
-
-            .photo-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .photo-slot.wide {
-                grid-column: span 2;
-            }
-
-            footer {
-                padding: 32px 20px 40px;
-            }
+            nav { padding: 16px 20px; }
+            nav .links { gap: 16px; }
+            nav .links a { font-size: 0.75rem; }
+            .hero { padding: 100px 20px 60px; }
+            section { padding: 80px 20px; }
+            .timeline-item { grid-template-columns: 60px 1fr; gap: 16px; }
+            .photo-grid { grid-template-columns: repeat(2, 1fr); }
+            .photo-slot.wide { grid-column: span 2; }
+            .values-grid { grid-template-columns: 1fr; }
+            .connect { padding: 80px 20px; }
+            footer { padding: 40px 20px; flex-direction: column; align-items: flex-start; }
         }
     </style>
 </head>
@@ -330,20 +448,21 @@
 
     <!-- Navigation -->
     <nav>
-        <a href="/" class="name">Callum Carver</a>
+        <a href="/" class="logo">CALLUM <span>CARVER</span></a>
         <div class="links">
             <a href="#story">Story</a>
             <a href="#life">Life</a>
             <a href="#values">Values</a>
-            <a href="https://callumcarver.com">Professional Site</a>
+            <a href="https://callumcarver.com">Professional</a>
         </div>
     </nav>
 
     <!-- Hero -->
     <section class="hero">
         <div class="hero-inner">
-            <h1>22, Manchester, building things I care about.</h1>
-            <p>I'm Callum Carver. I run a company called The Kaizen. But this page isn't about the business. It's about everything else.</p>
+            <div class="hero-tag">The Personal Side</div>
+            <h1>Every business has a story. Here's mine.</h1>
+            <p>I'm Callum Carver. I run The Kaizen. But before the company, the team and the revenue, there was a 17-year-old with a crumpled book and no plan. This is that story.</p>
             <div class="hero-social">
                 <a href="https://www.instagram.com/callumcarver" target="_blank" rel="noopener">Instagram</a>
                 <a href="https://www.tiktok.com/@callumcarver" target="_blank" rel="noopener">TikTok</a>
@@ -353,103 +472,147 @@
         </div>
     </section>
 
-    <!-- Content -->
-    <div class="content">
+    <div class="section-divider"></div>
 
-        <!-- Story -->
-        <div class="content-section" id="story">
-            <h2>The short version</h2>
+    <!-- Story -->
+    <section id="story">
+        <div class="section-label">Origin</div>
+        <h2>The short version</h2>
+        <div class="story-text">
             <p>I found entrepreneurship at 17 because of a TikTok video and a crumpled copy of Rich Dad, Poor Dad my dad dug out of a cupboard. Started making content about affiliate marketing, got my first $1,000 commission sitting in a photography class at sixth form, then got shut down by the SEC for being under 18.</p>
             <p>After that it was a series of figuring things out. Brand sponsorships. Walking around in a suit handing CVs to estate agents. Social media management for my sister's restaurant. A failed marketing agency where I tried to sell Facebook ads without ever having had a Facebook account. Each one taught me something. Each one got me closer.</p>
             <p>Eventually a mentor pointed me back to what I actually knew, and everything clicked. Now I run The Kaizen, where I help people do what I wish I'd done from the start: take a skill they already have and build a real business around it.</p>
+        </div>
 
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-year">2021</div>
-                    <div class="timeline-text"><strong>Found entrepreneurship at 17.</strong> Started with affiliate marketing on TikTok. First $1,000 commission in sixth form. Got shut down by the SEC.</div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-year">2021</div>
+                <div class="timeline-content">
+                    <h4>Found entrepreneurship at 17</h4>
+                    <p>Started with affiliate marketing on TikTok. Grew to 200K followers. First $1,000 commission in sixth form. Got shut down by the SEC.</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-year">2022</div>
-                    <div class="timeline-text"><strong>Tried everything.</strong> Brand sponsorships (Bitpanda), social media management, SMMA. Turned down a £20K/year estate agent job. Found my lane in influencer marketing (SMIP). Moved to Manchester.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2022</div>
+                <div class="timeline-content">
+                    <h4>Tried everything</h4>
+                    <p>Brand sponsorships (Bitpanda), social media management, SMMA. Turned down a £20K/year estate agent job. Found my lane in influencer marketing. Moved out on my own.</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-year">2023</div>
-                    <div class="timeline-text"><strong>Launched The Kaizen as a newsletter.</strong> Grew to 60,000 subscribers. Ran Project Kaizen (100-day challenge, 100K new followers). Launched Skill to Profit as a 10-person cohort first. Full launch was a massive success.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2023</div>
+                <div class="timeline-content">
+                    <h4>Launched The Kaizen</h4>
+                    <p>Started as a newsletter. Grew to 60,000 subscribers. Ran Project Kaizen (100-day challenge, 100K new followers). Launched Skill to Profit as a 10-person cohort first. Full launch was a massive success.</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-year">2024</div>
-                    <div class="timeline-text"><strong>Scaled to $70-100K/month.</strong> Built a team of 15+ people. Over 500 people coached. $1.3M+ in student revenue generated.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2024</div>
+                <div class="timeline-content">
+                    <h4>Scaled to $70-100K/month</h4>
+                    <p>Built a team of 15+ people. Over 500 people coached. $1.3M+ in student revenue generated.</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-year">2025</div>
-                    <div class="timeline-text"><strong>Retired both my parents.</strong> Dad came on as ops manager. Mum doesn't have to work at all. That meant more to me than any revenue number.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2025</div>
+                <div class="timeline-content">
+                    <h4>Retired both my parents</h4>
+                    <p>Dad came on as ops manager. Mum doesn't have to work at all. That meant more to me than any revenue number.</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-year">2026</div>
-                    <div class="timeline-text"><strong>Still going.</strong> New goals, bigger vision, same stubbornness that started everything.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2026</div>
+                <div class="timeline-content">
+                    <h4>Still going</h4>
+                    <p>New goals, bigger vision, same stubbornness that started everything.</p>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Life -->
-        <div class="content-section" id="life">
-            <h2>Beyond the business</h2>
-            <p>Manchester is home. I've lived here, moved to Bath, moved back. Something about this city keeps pulling me in. The grit, the energy, the people.</p>
+    <div class="section-divider"></div>
+
+    <!-- Life -->
+    <section id="life">
+        <div class="section-label">Beyond the business</div>
+        <h2>The other side</h2>
+        <div class="life-text">
             <p>I bought a Ford Mustang after my first big month. Took it on a driving trip around Europe, hammered it through mountain roads at stupid speeds, came back fine. Then crashed it into a lamppost in Bristol a couple of days later. That tells you everything you need to know about me.</p>
             <p>When I'm not working, it's fitness, reading (started with Rich Dad, Poor Dad and haven't stopped since), and spending time with the people I care about. The whole point of building something is so you can actually live well while you're young, not just grind until you burn out.</p>
-
-            <!-- PHOTOS: Add 5 real photos here -->
-            <!-- Save them as img/photo-1.jpg through img/photo-5.jpg in this folder -->
-            <!-- Suggested photos: 1) casual portrait, 2) Manchester/city, 3) with friends or team, 4) travel/Mustang (wide), 5) fitness or lifestyle -->
-            <div class="photo-grid">
-                <div class="photo-slot">
-                    <img src="img/photo-1.jpg" alt="Callum Carver">
-                </div>
-                <div class="photo-slot">
-                    <img src="img/photo-2.jpg" alt="Callum Carver">
-                </div>
-                <div class="photo-slot">
-                    <img src="img/photo-3.jpg" alt="Callum Carver">
-                </div>
-                <div class="photo-slot wide">
-                    <img src="img/photo-4.jpg" alt="Callum Carver">
-                </div>
-                <div class="photo-slot">
-                    <img src="img/photo-5.jpg" alt="Callum Carver">
-                </div>
-            </div>
         </div>
 
-        <!-- Values -->
-        <div class="content-section" id="values">
-            <h2>What matters to me</h2>
-
-            <div class="values-list">
-                <div class="value-item">
-                    <h3>Honesty over hype</h3>
-                    <p>I'd rather tell someone the truth about what it takes than sell them a dream. I tried selling things I didn't understand and got destroyed. Now I only teach what I've actually done.</p>
-                </div>
-                <div class="value-item">
-                    <h3>Action over theory</h3>
-                    <p>I spent months consuming books, podcasts and courses before I took any real action. The moment I actually started messaging businesses, everything changed. I teach my students the same thing: action produces results, information produces comfort.</p>
-                </div>
-                <div class="value-item">
-                    <h3>People over profit</h3>
-                    <p>The students who go through Skill to Profit aren't numbers. We've worked with 60-year-old retirees, interns, car salesmen, graduates. Watching them build something real is why I do this.</p>
-                </div>
-                <div class="value-item">
-                    <h3>Impact compounds</h3>
-                    <p>When someone starts earning £5,000 a month and quits their job, they go on to employ people, to change other lives. The impact spreads way beyond the individual. That's the most powerful thing I've experienced.</p>
-                </div>
+        <!-- PHOTOS: Save as img/photo-1.jpg through img/photo-5.jpg in this folder -->
+        <!-- Suggested: 1) casual portrait, 2) with friends or team, 3) travel/lifestyle, 4) Mustang or city (wide), 5) fitness -->
+        <div class="photo-grid">
+            <div class="photo-slot">
+                <img src="img/photo-1.jpg" alt="Callum Carver">
+            </div>
+            <div class="photo-slot">
+                <img src="img/photo-2.jpg" alt="Callum Carver">
+            </div>
+            <div class="photo-slot">
+                <img src="img/photo-3.jpg" alt="Callum Carver">
+            </div>
+            <div class="photo-slot wide">
+                <img src="img/photo-4.jpg" alt="Callum Carver">
+            </div>
+            <div class="photo-slot">
+                <img src="img/photo-5.jpg" alt="Callum Carver">
             </div>
         </div>
+    </section>
 
+    <div class="section-divider"></div>
+
+    <!-- Values -->
+    <section id="values">
+        <div class="section-label">Principles</div>
+        <h2>What matters to me</h2>
+        <div class="values-grid">
+            <div class="value-card">
+                <h3>Honesty over hype</h3>
+                <p>I'd rather tell someone the truth about what it takes than sell them a dream. I tried selling things I didn't understand and got destroyed. Now I only teach what I've actually done.</p>
+            </div>
+            <div class="value-card">
+                <h3>Action over theory</h3>
+                <p>I spent months consuming books, podcasts and courses before I took any real action. The moment I actually started messaging businesses, everything changed. Action produces results. Information produces comfort.</p>
+            </div>
+            <div class="value-card">
+                <h3>People over profit</h3>
+                <p>The students who go through Skill to Profit aren't numbers. We've worked with 60-year-old retirees, interns, car salesmen, graduates. Watching them build something real is why I do this.</p>
+            </div>
+            <div class="value-card">
+                <h3>Impact compounds</h3>
+                <p>When someone starts earning £5,000 a month and quits their job, they go on to employ people, to change other lives. The impact spreads way beyond the individual.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Connect -->
+    <div class="connect">
+        <h2>Want to work with me?</h2>
+        <p>If you've got a skill and you want to turn it into a business, Skill to Profit is where I'd start.</p>
+        <div class="connect-links">
+            <a href="https://thekaizen.co" class="btn-primary" target="_blank" rel="noopener">The Kaizen</a>
+            <a href="https://callumcarver.com" class="btn-secondary" target="_blank" rel="noopener">Professional Site</a>
+        </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>Callum Carver &bull; Manchester, UK &bull; <a href="https://callumcarver.com">callumcarver.com</a> &bull; <a href="https://thekaizen.co">The Kaizen</a></p>
-        <p style="margin-top: 8px;">&copy; 2026</p>
+        <div class="footer-left">
+            <p>Callum Carver <span>&middot;</span> Founder of The Kaizen <span>&middot;</span> Turning Skills Into Profit</p>
+            <p style="margin-top: 4px;">&copy; 2026 Kaizen LTD. All rights reserved.</p>
+        </div>
+        <div class="footer-socials">
+            <a href="https://www.instagram.com/callumcarver" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.tiktok.com/@callumcarver" target="_blank" rel="noopener">TikTok</a>
+            <a href="https://x.com/ItsCallumCarver" target="_blank" rel="noopener">X</a>
+            <a href="https://uk.linkedin.com/in/callum-carver-3392b7217" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://thekaizen.beehiiv.com" target="_blank" rel="noopener">Newsletter</a>
+        </div>
     </footer>
 
 </body>
